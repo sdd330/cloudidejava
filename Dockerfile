@@ -40,7 +40,7 @@ ADD https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION
 
 RUN chmod +x /usr/local/bin/docker-compose
 
-# Clean up APT when done.
+# Clean up APT when done
 RUN apt-get autoremove -yq && \
     apt-get clean -yq && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
